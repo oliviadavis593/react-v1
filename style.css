@@ -1,0 +1,49 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #58B19F;
+    color: #fff;
+}
+
+/*Main Header*/
+.intro-header {
+    text-align: center;
+    margin: 0 auto; 
+}
+
+/*Work Container*/
+.work-container {
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+.work-container ul li {
+    list-style: none;
+}
+
+/*Education Container*/
+.education-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.education-container ul li {
+    list-style: none;
+    padding-top: 20px; 
+}
+
+/*Contact Container*/
+.contact-container {
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+/*Footer Container*/
+.main-footer {
+    margin: 0 auto; 
+    text-align: center;
+}
