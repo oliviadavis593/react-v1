@@ -21,6 +21,11 @@ body {
     margin: 0 auto; 
 }
 
+.work-container h2 {
+    font-size: 35px; 
+    box-shadow: 4px 4px 4px #000; 
+}
+
 .work-container ul li {
     list-style: none;
 }
@@ -29,6 +34,11 @@ body {
 .education-container {
     text-align: center;
     margin: 0 auto;
+}
+
+.education-container h2 {
+    font-size: 35px; 
+    box-shadow: 4px 4px 4px #000; 
 }
 
 .education-container ul li {
@@ -40,6 +50,11 @@ body {
 .contact-container {
     text-align: center; 
     margin: 0 auto; 
+}
+
+.contact-container h2 {
+    font-size: 35px; 
+    box-shadow: 4px 4px 4px #000; 
 }
 
 /*Footer Container*/
