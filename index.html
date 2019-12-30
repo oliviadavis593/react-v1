@@ -3,11 +3,12 @@
     <head>
         <title>Sally's Resume</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div src="application-root"></div>
+        <div id="root"></div>
 
         <script
             src="https://unpkg.com/react@16/umd/react.development.js">
@@ -15,26 +16,95 @@
         <script
             src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
         </script>
-        <script>
+        <script
             src="https://unpkg.com/babel-standalone@6/babel.min.js"
+            crossorigin>
         </script>
         <script type="text/babel">
-            function App(props) {
-                console.log(props)
-              <main>
-                <header role="header">
-                    <h1>{props.name}</h1>
-                </header>
-              
-              
-              
-              </main>  
-            }
-            ReactDOM.render (
-                <App className="my-class">
-                <h1>My App</h1>
-                </App>,
-                document.querySelector('#application-root')
+            function App() {
+                return (
+                    <main>
+                    <header>
+                        <h1>Sally Doe Resume</h1> 
+                        <p>
+                            I'm passionate about learning the latest and greatest technologies
+                            whether thats the frontend or backend. I enjoy creating sleek and 
+                            responsive applications in addition to being user friendly.    
+                        </p>   
+                    </header>
+
+                    <section>
+                        <header>
+                            <h2>Work History</h2>    
+                        </header> 
+                        
+                        <ul>
+                            <li><strong>Software Developer @ Blyncsy</strong>
+                                <p><strong>2018-Present</strong></p>
+                                
+                                <p>
+                                As a Software Developer at Blynscy I utilize Ruby on Rails as
+                                the primary framework to build out their frontend. In, addition
+                                to Ruby on Rails I use Javascript, jQuery, and PostgreSQL to further 
+                                complete my projects on the application.     
+                                </p>   
+                                
+                            </li>
+
+                            <li><strong>Software Developer @ Boy Canton Group, Inc.</strong>
+                                <p><strong>2013-2018</strong></p>
+                                <p>
+                                 I work with React.js / PHP / SASS / GULP as well as SQL to build
+                                 and maintain the websites for the Federal Transportation Administartion.
+                                 I work closelt with UI/UX to make sure that the visions from our clients
+                                 are stylish and function. Everything I build is compliant with federally
+                                 regulated accessibility requirements of section 508.  
+                                </p>
+                            </li>
+
+                            <li><strong>Tactical Systems Engineer @ IM Flash Technologies</strong>
+                                <p><strong>2012-2013</strong></p>
+                                <p>
+                                As a Tatical Tool Owner I utilized SPC priniciples to dechiper and monitor
+                                manufacturing fluctuations. I assistaed in developing a long term down 
+                                website that tracks long term down equipment and stores possible outcomes
+                                and other useful data sets. These can be used later to retrieve the solutions
+                                from the data base for faster equipment recovery.    
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h2>Education</h2>    
+                        </header>
+
+                        <ul>
+                        <li><strong>High School:</strong></li>Las Vegas Academy of the Arts (2004-2008) 
+                        <li><strong>College:</strong></li>University of Chicago (2008-2012) 
+                        </ul>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h2>Contact Information</h2>    
+                        </header>
+
+                        <address>
+                            <p><strong>Name:</strong></p>Sally Doe
+                            <p><strong><a href="mailto:sally101@gmail.com">Email me</a></strong></p>
+                            <p><strong>555.148.7274</strong></p>
+                        </address>
+                    </section>
+
+                    </main>
+                );
+            };
+
+            ReactDOM.render(
+                <App />,
+                document.querySelector('#root')
             )
         </script>
     </body>
